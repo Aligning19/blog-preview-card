@@ -1,0 +1,81 @@
+*  {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+    
+.wrapper {
+    background-color: hsl(47, 88%, 63%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    animation: fadeIn 0.5s;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px black solid;
+}
+
+.card:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+/* kebab case = felix-febri */
+/* camel case = haloBang */
+
+.card img.gambar1{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.learning {
+    color: white;
+    font-weight: 700;
+    padding: 5px 12px;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(90deg, cyan, blue);
+}
+
+.yoga {
+    display: flex;
+    align-items: center;
+}
+
+.yoga > h5 {
+    padding: 20px;
+}
+
+.card > .learning {
+    margin: 15px 0;
+}
+
+.card > p {
+    margin: 15px 0;
+}
